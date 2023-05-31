@@ -1,0 +1,735 @@
+body {
+  background-color: #082f48;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.galaxy {
+  margin: 60px auto 0 auto;
+  overflow: hidden;
+}
+
+.galaxy .circle-wrapper {
+  position: relative;
+  background: -webkit-radial-gradient(#224962, #000);
+  background: radial-gradient(#224962, #000);
+  width: 350px;
+  height: 350px;
+  margin: 10px auto 0 auto;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 50%;
+  padding: 0 50px 0 50px;
+  border: 6px solid #3e8caa;
+}
+
+.galaxy .star1 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-1-movement 2.5s ease-in infinite;
+}
+
+@-webkit-keyframes star-1-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes star-1-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.galaxy .star2 {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  margin-top: 45px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-2-movement 1.5s ease-in infinite;
+}
+
+@-webkit-keyframes star-2-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes star-2-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+.galaxy .star3 {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  margin-top: 95px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-3-movement 2s ease-in infinite;
+}
+
+@-webkit-keyframes star-3-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes star-3-movement {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+.galaxy .star4 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-top: 135px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-4-movement 2.8s ease-in infinite;
+}
+
+@-webkit-keyframes star-4-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes star-4-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+.galaxy .star5 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  margin-top: 230px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-5-movement 3.8s ease-in infinite;
+}
+
+@-webkit-keyframes star-5-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes star-5-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+.galaxy .star6 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  margin-top: 270px;
+  border-radius: 50%;
+  background-color: #ededed;
+  animation: star-6-movement 4s ease-in infinite;
+}
+
+@-webkit-keyframes star-6-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes star-6-movement {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+
+.galaxy .UFO-wrapper {
+  height: 400px;
+  width: 400px;
+  padding: 15px 50px 0px 50px;
+  margin: 10px -70px 0 -70px;
+  -webkit-animation: flying 1.5s linear infinite alternate,
+    flying-glide 1.5s ease-in-out infinite alternate;
+  animation: flying 1.5s linear infinite alternate,
+    flying-glide 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flying {
+  0% {
+    margin-top: 0px;
+  }
+  17% {
+    margin-top: 8px;
+  }
+  40% {
+    margin-top: 18px;
+  }
+  65% {
+    margin-top: 11px;
+  }
+  82% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes flying {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 8px;
+  }
+  40% {
+    margin-top: 18px;
+  }
+  60% {
+    margin-top: 11px;
+  }
+  80% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes flying-glide {
+  0% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flying-glide {
+  0% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.galaxy .UFO-wrapper:hover {
+  height: 400px;
+  width: 400px;
+  padding: 15px 50px 30px 50px;
+  margin: 10px -70px 0 -70px;
+  transform: translateX(500px);
+  -webkit-animation: flying-glide2 1s ease-in-out infinite alternate-reverse;
+  animation: flying-glide2 1s ease-in-out infinite alternate-reverse;
+  transform: translateY(100px);
+}
+
+@-webkit-keyframes flying2 {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 8px;
+  }
+  40% {
+    margin-top: 18px;
+  }
+  60% {
+    margin-top: 11px;
+  }
+  80% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes flying2 {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 8px;
+  }
+  40% {
+    margin-top: 18px;
+  }
+  60% {
+    margin-top: 11px;
+  }
+  80% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes flying-glide2 {
+  0% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes flying-glide2 {
+  0% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.galaxy .UFO-wrapper .UFO-head {
+  display: block;
+  position: absolute;
+  left: 110px;
+  transform: rotate(-4deg);
+  -webkit-animation: back 750ms linear infinite alternate;
+  animation: back 750ms linear infinite alternate;
+}
+
+@-webkit-keyframes back {
+  100% {
+    transform-origin: 120px 80%;
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes back {
+  100% {
+    transform-origin: 120px 80%;
+    transform: rotate(2deg);
+  }
+}
+
+.galaxy .UFO-wrapper .UFO-head .dot {
+  background-color: #d63852;
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  left: 32px;
+  margin-top: 36px;
+}
+
+.galaxy .UFO-wrapper:hover .UFO-head .dot {
+  background-color: yellow;
+}
+
+.galaxy .UFO-wrapper .UFO-head .dot2 {
+  background-color: #d63852;
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  left: 32px;
+  margin-top: 36px;
+  -webkit-animation: signal 1s linear infinite;
+  animation: signal 1s linear infinite;
+}
+
+@-webkit-keyframes signal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes signal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.galaxy .UFO-wrapper:hover .UFO-head .dot2 {
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  left: 32px;
+  margin-top: 36px;
+  -webkit-animation: dot-color 1s linear infinite;
+  animation: dot-color 1s linear infinite;
+}
+
+@-webkit-keyframes dot-color {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes dot-color {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.galaxy .UFO-wrapper .UFO-head .anten {
+  width: 80px;
+  height: 80px;
+  margin-top: 42px;
+  position: absolute;
+  border: solid 4px #000;
+  border-color: transparent #fff transparent transparent;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+}
+
+.galaxy .UFO-wrapper .UFO-body {
+  width: 140px;
+  height: 55px;
+  -webkit-border-radius: 50px 50px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  margin-top: 80px;
+  left: 120px;
+  background-color: #d93a54;
+  background: -webkit-linear-gradient(#4aaed3, #1c8db7);
+  background: linear-gradient(#4aaed3, #1c8db7);
+}
+
+.galaxy .UFO-wrapper .UFO-body .window {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  margin-top: 10px;
+  left: 53px;
+  background-color: #1e606f;
+  border-radius: 50%;
+  border: 6px solid #197ea2;
+}
+
+.galaxy .UFO-wrapper .UFO-body .window::after,
+.galaxy .UFO-wrapper .UFO-body .window::before {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  background-color: white;
+  -webkit-animation: spin 2s cubic-bezier(0.74, 0.09, 0.08, 1.31) infinite
+    alternate;
+  animation: spin 2s cubic-bezier(0.74, 0.09, 0.08, 1.31) infinite alternate;
+  opacity: 0.8;
+}
+
+.galaxy .UFO-wrapper .UFO-body .window::after {
+  top: 8.5px;
+  width: 22px;
+  height: 5px;
+}
+
+.galaxy .UFO-wrapper .UFO-body .window::before {
+  left: 8.5px;
+  width: 5px;
+  height: 22px;
+}
+
+@-webkit-keyframes spin {
+  20% {
+    -webkit-transform: rotate(250deg);
+    transform: rotate(250deg);
+  }
+  60% {
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  20% {
+    -webkit-transform: rotate(250deg);
+    transform: rotate(250deg);
+  }
+  60% {
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.galaxy .UFO-wrapper .UFO-foot {
+  width: 190px;
+  height: 45px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+  border-radius: 50px 50px 50px 50px;
+  position: absolute;
+  margin-top: 130px;
+  left: 95px;
+  background-color: #d93a54;
+  background: -webkit-linear-gradient(#2ca75b, #1a8945);
+  background: linear-gradient(#2ca75b, #1a8945);
+}
+
+.galaxy .UFO-wrapper .UFO-foot .engine1 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 18px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin 4s linear infinite;
+  animation: lightin 4s linear infinite;
+}
+
+.galaxy .UFO-wrapper .UFO-foot .engine2 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 61px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin 4s linear infinite;
+  animation: lightin 4s linear infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.galaxy .UFO-wrapper .UFO-foot .engine3 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 104px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin 4s linear infinite;
+  animation: lightin 4s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.galaxy .UFO-wrapper .UFO-foot .engine4 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 147px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin 4s linear infinite;
+  animation: lightin 4s linear infinite;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.galaxy .UFO-wrapper:hover .UFO-foot .engine1 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 18px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin2 1s linear infinite;
+  animation: lightin2 1s linear infinite;
+}
+
+.galaxy .UFO-wrapper:hover .UFO-foot .engine2 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 61px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin2 1s linear infinite;
+  animation: lightin2 1s linear infinite;
+}
+
+.galaxy .UFO-wrapper:hover .UFO-foot .engine3 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 104px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin2 1s linear infinite;
+  animation: lightin2 1s linear infinite;
+}
+
+.galaxy .UFO-wrapper:hover .UFO-foot .engine4 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 9px;
+  left: 147px;
+  background-color: #d63852;
+  border-radius: 50%;
+  border: 5px solid #0a5f2b;
+  -webkit-animation: lightin2 1s linear infinite;
+  animation: lightin2 1s linear infinite;
+}
+
+@-webkit-keyframes lightin {
+  25% {
+    -webkit-background-color: #e2e240;
+    background-color: #e2e240;
+  }
+  50% {
+    -webkit-background-color: #d831b8;
+    background-color: #d831b8;
+  }
+  75% {
+    -webkit-background-color: #40e2c3;
+    background-color: #40e2c3;
+  }
+  100% {
+    -webkit-background-color: #d63852;
+    background-color: #d63852;
+  }
+}
+
+@keyframes lightin {
+  25% {
+    -webkit-background-color: #e2e240;
+    background-color: #e2e240;
+  }
+  50% {
+    -webkit-background-color: #d831b8;
+    background-color: #d831b8;
+  }
+  75% {
+    -webkit-background-color: #40e2c3;
+    background-color: #40e2c3;
+  }
+  100% {
+    -webkit-background-color: #d63852;
+    background-color: #d63852;
+  }
+}
+
+@-webkit-keyframes lightin2 {
+  50% {
+    -webkit-background-color: #fff;
+    background-color: #fff;
+  }
+  100% {
+    -webkit-background-color: #000;
+    background-color: #000;
+  }
+}
+
+@keyframes lightin2 {
+  50% {
+    -webkit-background-color: #fff;
+    background-color: #fff;
+  }
+  100% {
+    -webkit-background-color: #000;
+    background-color: #000;
+  }
+}
